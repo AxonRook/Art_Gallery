@@ -1,0 +1,138 @@
+:root {
+    --color-title: #ffffff;
+    --color-text: #000000;
+    --color-background: #C6D2D7;
+    --color-header: #404D52;
+}
+
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: var(--color-background);
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header{
+    background-color: var(--color-header);
+    height: 100%;
+    border: var(--color-header) 2px solid;
+}
+
+.header a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.header h1{
+    color: var(--color-title);
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 2.5em;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 2%;
+    color:var(--color-title);
+}
+
+nav ul li a {
+    color: var(--color-title);
+    text-decoration: none;
+}
+
+/*Voici'gal street + image + texte*/
+
+.hero-section h2{
+    text-align: center;
+}
+
+.hero-img{
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    max-width: 250px;
+}
+
+.main-text{
+    text-align: center;
+}
+
+/*partie artiste*/
+
+.artiste h2{
+    text-align: center;
+}
+
+.artist-img{
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    max-width: 250px;
+}
+
+.secondary-title{
+    text-align: center;
+}
+
+.secondary-text{
+    text-align: center;
+}
+
+/*partie Galerie*/
+
+.image-galerie{
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    max-width: 250px;
+}
+
+.caption-image{
+    text-align: center;
+    font-weight: 900;
+    font-size: 1em;
+}
+
+/*footer*/
+
+footer{
+    background-color: var(--color-header);
+    padding: 0 3%;
+    padding-bottom: 100px;
+}
+
+.footer-title{
+    color: var(--color-title);
+    font-size: 1.5em;
+    padding-top: 2%;
+}
+
+footer p{
+    color: var(--color-title);
+}
+
+.form-footer{
+    display: flex;
+    flex-direction: column;
+}
+
+input{
+    width: 50%;
+    font-size: 0.7em;
+}
+
+button{
+    width: 20%;
+    text-align: center;
+    font-size: 0.7em;
+}
+
