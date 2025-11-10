@@ -20,6 +20,8 @@ body{
     background-color: var(--color-header);
     height: 100%;
     border: var(--color-header) 2px solid;
+    display: flex;
+    flex-direction: column;
 }
 
 .header a{
@@ -58,7 +60,6 @@ nav ul li a {
 .hero-img{
     display: block;
     margin: 0 auto;
-    max-width: 100%;
     max-width: 250px;
 }
 
@@ -68,14 +69,9 @@ nav ul li a {
 
 /*partie artiste*/
 
-.artiste h2{
-    text-align: center;
-}
-
 .artist-img{
     display: block;
     margin: 0 auto;
-    max-width: 100%;
     max-width: 250px;
 }
 
@@ -92,7 +88,6 @@ nav ul li a {
 .image-galerie{
     display: block;
     margin: 0 auto;
-    max-width: 100%;
     max-width: 250px;
 }
 
@@ -134,5 +129,11 @@ button{
     width: 20%;
     text-align: center;
     font-size: 0.7em;
+}
+
+/*Responsive*/
+
+@media screen and (min-width:768px) {
+    ...{}
 }
 
