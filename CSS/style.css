@@ -5,137 +5,224 @@
     --color-header: #404D52;
 }
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-html{
+html {
     scroll-behavior: smooth;
 }
 
-body{
+body {
     background-color: var(--color-background);
-    margin: 0;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.header{
+body img {
+    border-radius: 10px;
+}
+
+
+/* ========== HEADER - MOBILE FIRST ========== */
+.header {
     background-color: var(--color-header);
-    height: 100%;
-    border: var(--color-header) 2px solid;
+    padding: 20px;
+}
+
+.header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    align-items: center;
     display: flex;
     flex-direction: column;
 }
 
-.header a{
+.header h1 {
+    color: var(--color-title);
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 2.8em;
+    margin-bottom: 15px;
+}
+
+.header a {
     text-decoration: none;
     color: inherit;
 }
 
-.header h1{
-    color: var(--color-title);
-    text-transform: uppercase;
-    text-align: center;
-    font-size: 2.5em;
-}
-
-nav ul {
-    display: flex;
-}
-
-nav ul li {
+.navbar ul {
     list-style: none;
-    margin: 2%;
-    color:var(--color-title);
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
-nav ul li a {
+.navbar ul li a {
     color: var(--color-title);
     text-decoration: none;
+    font-size: 0.95em;
 }
 
-/*Voici'gal street + image + texte*/
+.navbar ul li a:hover {
+    opacity: 0.8;
+    background-color: #C6D2D7;
+    color: var(--color-text);
+    font-weight: bold;
+    border-radius: 5px;
+}
 
-.hero-section h2{
+/* HERO SECTION - MOBILE */
+.hero-section {
+    padding: 30px 20px;
     text-align: center;
 }
 
-.hero-img{
-    display: block;
-    margin: 0 auto;
-    max-width: 250px;
-}
-
-.main-text{
-    text-align: center;
-}
-
-/*partie artiste*/
-
-.artist-img{
-    display: block;
-    margin: 0 auto;
-    max-width: 250px;
-}
-
-.secondary-title{
-    text-align: center;
-}
-
-.secondary-text{
-    text-align: center;
-}
-
-/*partie Galerie*/
-
-.image-galerie{
-    display: block;
-    margin: 0 auto;
-    max-width: 250px;
-}
-
-.caption-image{
-    text-align: center;
-    font-weight: 900;
-    font-size: 1em;
-}
-
-/*footer*/
-
-footer{
-    background-color: var(--color-header);
-    padding: 0 3%;
-    padding-bottom: 100px;
-}
-
-.footer-title{
-    color: var(--color-title);
+.hero-section h2 {
     font-size: 1.5em;
-    padding-top: 2%;
+    margin-bottom: 20px;
 }
 
-footer p{
-    color: var(--color-title);
+.hero-content {
+    max-width: 600px;
+    margin: 0 auto;
 }
 
-.form-footer{
+.hero-img {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+    display: block;
+    margin: 0 auto 20px;
+}
+
+.main-text {
+    text-align: center;
+    line-height: 1.6;
+    font-size: 0.95em;
+}
+
+/* ARTISTE SECTION - MOBILE */
+.artiste {
+    padding: 30px 20px;
+}
+
+.secondary-title {
+    font-size: 1.5em;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.artiste-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.artist-img {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+    display: block;
+    margin: 0 auto 20px;
+}
+
+.secondary-text {
+    text-align: center;
+    line-height: 1.6;
+    font-size: 0.95em;
+}
+
+/* GALERIE SECTION - MOBILE */
+.galerie {
+    padding: 30px 20px;
+}
+
+.grid-images {
     display: flex;
     flex-direction: column;
+    gap: 25px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-input{
-    width: 50%;
-    font-size: 0.7em;
-}
-
-button{
-    width: 20%;
+.image-and-text {
     text-align: center;
-    font-size: 0.7em;
+    transition: transform 0.3s ease;
 }
 
-/*Responsive*/
-
-@media screen and (min-width:768px) {
-    .header h1{
-        font-size: 2.5em;
-    }
+.image-and-text:hover {
+    transform: scale(1.08);
 }
 
+.image-galerie {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+    display: block;
+    margin: 0 auto 10px;
+}
+
+.caption-image {
+    font-weight: 900;
+    font-size: 0.95em;
+    color: var(--color-text);
+}
+
+/* FOOTER - MOBILE */
+footer {
+    background-color: var(--color-header);
+    padding: 30px 20px 50px;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-title {
+    color: var(--color-title);
+    font-size: 1.3em;
+    margin-bottom: 15px;
+}
+
+footer p {
+    color: var(--color-title);
+    line-height: 1.8;
+    font-size: 0.9em;
+}
+
+.contact {
+    margin-bottom: 30px;
+}
+
+.form-footer {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.form-footer input {
+    width: 100%;
+    padding: 10px;
+    font-size: 0.9em;
+    border: none;
+    border-radius: 3px;
+}
+
+.form-footer button {
+    width: 100px;
+    padding: 10px;
+    font-size: 0.9em;
+    background-color: var(--color-background);
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: transform 0.3s ease;
+}
+
+.form-footer button:hover {
+    opacity: 0.8;
+    transform: scale(1.08);
+}
