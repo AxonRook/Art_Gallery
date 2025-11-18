@@ -47,6 +47,15 @@ body img {
     margin-bottom: 15px;
 }
 
+.header h1:hover {
+    animation: pulse 1s infinite ease-in-out alternate;
+}
+
+@keyframes pulse {
+    from {transform: scale(1);}
+    to {transform: scale(1.1);}
+}
+
 .header a {
     text-decoration: none;
     color: inherit;
@@ -87,6 +96,11 @@ body img {
 .hero-content {
     max-width: 600px;
     margin: 0 auto;
+    transition: transform 0.3s ease;
+}
+
+.hero-content:hover {
+    transform: scale(1.05);
 }
 
 .hero-img {
@@ -117,6 +131,11 @@ body img {
 .artiste-content {
     max-width: 1200px;
     margin: 0 auto;
+    transition: transform 0.3s ease;
+}
+
+.artiste-content:hover {
+    transform: scale(1.05);
 }
 
 .artist-img {
@@ -224,5 +243,10 @@ footer p {
 
 .form-footer button:hover {
     opacity: 0.8;
-    transform: scale(1.08);
+    animation: pulse 1s infinite ease-in-out alternate;
+}
+
+@keyframes pulse {
+    from {transform: scale(1);}
+    to {transform: scale(1.1);}
 }
