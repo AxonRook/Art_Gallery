@@ -334,5 +334,23 @@ footer p {
         max-width: 550px;
     }
 
+    /* Galerie Section */
+    .galerie {
+        padding: 60px 50px;
+    }
+
+    .grid-images {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 40px;
+    }
+
+    .image-galerie {
+        max-width: 350px;
+    }
+
+    .caption-image {
+        font-size: 1em;
+    }
+
 }
 
