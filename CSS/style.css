@@ -171,7 +171,7 @@ body img {
 }
 
 .image-and-text:hover {
-    transform: scale(1.08);
+    transform: scale(1.12) translateY(-5px);
 }
 
 .image-galerie {
@@ -243,7 +243,7 @@ footer p {
 
 .form-footer button:hover {
     opacity: 0.8;
-    animation: pulse 1s infinite ease-in-out alternate;
+    transform: translateY(4px);
 }
 
 @keyframes pulse {
