@@ -270,5 +270,68 @@ footer p {
         padding: 25px 40px;
     }
 
+    .header h1 {
+        font-size: 3.5em;
+        margin-bottom: 20px;
+    }
+
+    .navbar ul {
+        gap: 50px;
+    }
+
+    .navbar ul li a {
+        font-size: 1.1em;
+    }
+
+    /* Hero Section */
+    .hero-section {
+        padding: 60px 50px;
+    }
+
+    .hero-section h2 {
+        font-size: 2.5em;
+        margin-bottom: 30px;
+    }
+
+    .hero-img {
+        max-width: 500px;
+    }
+
+    .main-text {
+        max-width: 700px;
+        font-size: 1.05em;
+    }
+
+    /* Artiste Section */
+    .artiste {
+        padding: 60px 50px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .secondary-title {
+        font-size: 2.5em;
+        margin-bottom: 30px;
+    }
+
+    .artitre{
+        margin-left: 355px;
+    }
+
+    .artiste-content {
+        gap: 50px;
+    }
+
+    .artist-img {
+        width: 45%;
+        max-width: 450px;
+    }
+
+    .secondary-text {
+        width: 55%;
+        font-size: 1em;
+        max-width: 550px;
+    }
+
 }
 
