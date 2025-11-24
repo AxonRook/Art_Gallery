@@ -68,7 +68,8 @@ body img {
     list-style: none;
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 30px;
+    margin-top: 10px;
 }
 
 .navbar ul li a {
@@ -276,7 +277,7 @@ footer p {
     .navbar ul {
         flex-direction: row;
         justify-content: center;
-        gap: 30px;
+        gap: 50px;
         margin-top: 10px;
     }
 
@@ -290,16 +291,16 @@ footer p {
     }
 
     .hero-section h2 {
-        font-size: 2em;
+        font-size: 2.25em;
     }
 
     .hero-img {
-        max-width: 400px;
+        max-width: 450px;
     }
 
     .main-text {
         max-width: 500px;
-        font-size: 1em;
+        font-size: 1.15em;
         margin: auto;
     }
 
@@ -309,7 +310,7 @@ footer p {
     }
 
     .secondary-title {
-        font-size: 2em;
+        font-size: 2.25em;
         text-align: left;
     }
 
@@ -320,7 +321,7 @@ footer p {
     }
 
     .artist-img {
-        width: 40%;
+        width: 50%;
         max-width: none;
         margin: 0;
         flex-shrink: 0;
@@ -329,7 +330,7 @@ footer p {
     .secondary-text {
         width: 60%;
         text-align: justify;
-        font-size: 0.95em;
+        font-size: 0.80em;
     }
 
     /* Galerie Section */
@@ -392,7 +393,8 @@ footer p {
     }
 
     .navbar ul {
-        gap: 50px;
+        gap: 90px;
+        margin-top: 15px;
     }
 
     .navbar ul li a {
