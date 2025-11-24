@@ -90,7 +90,7 @@ body img {
 }
 
 .hero-section h2 {
-    font-size: 1.5em;
+    font-size: 2em;
     margin-bottom: 20px;
 }
 
@@ -106,7 +106,7 @@ body img {
 
 .hero-img {
     width: 100%;
-    max-width: 250px;
+    max-width: 350px;
     height: auto;
     display: block;
     margin: 0 auto 20px;
@@ -115,7 +115,7 @@ body img {
 .main-text {
     text-align: center;
     line-height: 1.6;
-    font-size: 0.95em;
+    font-size: 0.97em;
 }
 
 /* Artiste - MOBILE */
@@ -124,7 +124,7 @@ body img {
 }
 
 .secondary-title {
-    font-size: 1.5em;
+    font-size: 2em;
     text-align: center;
     margin-bottom: 20px;
 }
@@ -141,7 +141,7 @@ body img {
 
 .artist-img {
     width: 100%;
-    max-width: 250px;
+    max-width: 350px;
     height: auto;
     display: block;
     margin: 0 auto 20px;
@@ -150,7 +150,7 @@ body img {
 .secondary-text {
     text-align: center;
     line-height: 1.6;
-    font-size: 0.95em;
+    font-size: 0.85em;
 }
 
 /* Galerie - MOBILE */
@@ -182,7 +182,7 @@ body img {
 
 .image-galerie {
     width: 100%;
-    max-width: 250px;
+    max-width: 300px;
     height: auto;
     display: block;
     margin: 0 auto 10px;
@@ -207,7 +207,7 @@ footer {
 
 .footer-title {
     color: var(--color-title);
-    font-size: 1.3em;
+    font-size: 1.5em;
     margin-bottom: 15px;
 }
 
@@ -484,7 +484,7 @@ footer p {
     }
 
     .footer-title {
-        font-size: 1.5em;
+        font-size: 1.75em;
     }
 
     footer p {
