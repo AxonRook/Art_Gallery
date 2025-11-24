@@ -106,7 +106,7 @@ body img {
 
 .hero-img {
     width: 100%;
-    max-width: 350px;
+    max-width: 325px;
     height: auto;
     display: block;
     margin: 0 auto 20px;
@@ -141,7 +141,7 @@ body img {
 
 .artist-img {
     width: 100%;
-    max-width: 350px;
+    max-width: 325px;
     height: auto;
     display: block;
     margin: 0 auto 20px;
@@ -182,7 +182,7 @@ body img {
 
 .image-galerie {
     width: 100%;
-    max-width: 300px;
+    max-width: 325px;
     height: auto;
     display: block;
     margin: 0 auto 10px;
@@ -394,7 +394,7 @@ footer p {
 
     .navbar ul {
         gap: 90px;
-        margin-top: 15px;
+        margin-top: 10px;
     }
 
     .navbar ul li a {
