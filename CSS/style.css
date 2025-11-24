@@ -164,6 +164,11 @@ body img {
     gap: 25px;
     max-width: 1200px;
     margin: 0 auto;
+    transition: filter 300ms;
+}
+
+.grid-images:has(:hover) :not(:hover) {
+    filter: blur(2px);
 }
 
 .image-and-text {
@@ -225,9 +230,16 @@ footer p {
 .form-footer input {
     width: 100%;
     padding: 10px;
-    font-size: 0.9em;
+    font-size: 0.8em;
     border: none;
-    border-radius: 3px;
+    border-radius: 10px;
+    font-weight: bold;
+    transition: transform 0.3s ease;
+}
+
+.form-footer input:hover {
+    opacity: 0.8;
+    transform: translateY(2px);
 }
 
 .form-footer button {
@@ -236,7 +248,7 @@ footer p {
     font-size: 0.9em;
     background-color: var(--color-background);
     border: none;
-    border-radius: 3px;
+    border-radius: 10px;
     cursor: pointer;
     font-weight: bold;
     transition: transform 0.3s ease;
@@ -356,10 +368,12 @@ footer p {
 
     .form-footer input {
         width: 70%;
+        font-size: 0.8em;
     }
 
     .form-footer button {
         width: 30%;
+        font-size: 0.9em;
     }
 
 }
@@ -473,13 +487,13 @@ footer p {
     .form-footer input {
         width: 60%;
         padding: 12px;
-        font-size: 1em;
+        font-size: 0.8em;
     }
 
     .form-footer button {
         width: 25%;
         padding: 12px;
-        font-size: 1em;
+        font-size: 0.9em;
     }
 
 }
