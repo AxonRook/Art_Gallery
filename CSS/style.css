@@ -339,6 +339,29 @@ footer p {
         max-width: 300px;
     }
 
+    /* Footer */
+    footer {
+        padding: 40px 40px 60px;
+    }
+
+    .footer-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 50px;
+    }
+
+    .contact {
+        margin-bottom: 0;
+    }
+
+    .form-footer input {
+        width: 70%;
+    }
+
+    .form-footer button {
+        width: 30%;
+    }
+
 }
 
 /* ========== RESPONSIVE DESKTOP (1024px et plus) ========== */
@@ -427,6 +450,35 @@ footer p {
     }
 
     .caption-image {
+        font-size: 1em;
+    }
+
+    /* Footer */
+    footer {
+        padding: 50px 50px 70px;
+    }
+
+    .footer-container {
+        gap: 100px;
+    }
+
+    .footer-title {
+        font-size: 1.5em;
+    }
+
+    footer p {
+        font-size: 1em;
+    }
+
+    .form-footer input {
+        width: 60%;
+        padding: 12px;
+        font-size: 1em;
+    }
+
+    .form-footer button {
+        width: 25%;
+        padding: 12px;
         font-size: 1em;
     }
 
