@@ -50,6 +50,8 @@ body img {
 
 .header h1:hover {
     animation: pulse 1s infinite ease-in-out alternate;
+    color: var(--color-text);
+    font-weight: bold;
 }
 
 @keyframes pulse {
@@ -76,11 +78,8 @@ body img {
 }
 
 .navbar ul li a:hover {
-    opacity: 0.8;
-    background-color: #C6D2D7;
     color: var(--color-text);
     font-weight: bold;
-    border-radius: 5px;
 }
 
 /* Hero - MOBILE */
@@ -177,7 +176,7 @@ body img {
 }
 
 .image-and-text:hover {
-    transform: scale(1.12) translateY(-5px);
+    transform: scale(1.1) translateY(-1px);
 }
 
 .image-galerie {
@@ -255,7 +254,8 @@ footer p {
 }
 
 .form-footer button:hover {
-    opacity: 0.8;
+    opacity: 0.9;
+    color: var(--color-title);
     transform: translateY(4px);
 }
 
@@ -387,7 +387,7 @@ footer p {
     }
 
     .header h1 {
-        font-size: 3.5em;
+        font-size: 4em;
         margin-bottom: 20px;
     }
 
@@ -405,17 +405,17 @@ footer p {
     }
 
     .hero-section h2 {
-        font-size: 2.5em;
+        font-size: 3em;
         margin-bottom: 30px;
     }
 
     .hero-img {
-        max-width: 500px;
+        max-width: 600px;
     }
 
     .main-text {
         max-width: 700px;
-        font-size: 1.05em;
+        font-size: 1.20em;
     }
 
     /* Artiste Section */
@@ -423,15 +423,15 @@ footer p {
         padding: 60px 50px;
         display: flex;
         flex-direction: column;
+        align-items: center;
     }
 
-    .secondary-title {
-        font-size: 2.5em;
+    .artiste h2 {
+        font-size: 3em;
         margin-bottom: 30px;
-    }
-
-    .artitre{
-        margin-left: 355px;
+        text-align: left;
+        width: 100%;
+        max-width: 1150px;
     }
 
     .artiste-content {
@@ -439,8 +439,8 @@ footer p {
     }
 
     .artist-img {
-        width: 45%;
-        max-width: 450px;
+        width: 55%;
+        max-width: 550px;
     }
 
     .secondary-text {
@@ -452,6 +452,11 @@ footer p {
     /* Galerie Section */
     .galerie {
         padding: 60px 50px;
+    }
+
+    .galerie h2 {
+        font-size: 3em;
+        margin-bottom: 30px;
     }
 
     .grid-images {
