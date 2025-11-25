@@ -10,9 +10,13 @@
     <meta name="keywords" content="GAL'STREET, galerie d'art, street art, art urbain, Rue de la République, Paris, exposition, portraits, photo, vidéo">
     <meta name="author" content="GAL'STREET">
 
-    <!-- Lien vers la feuille de style CSS et preload -->
+    <!-- Preload des ressources importantes - Premières images et CSS -->
+    <link rel="preload" href="CSS/style.css" as="style">
+    <link rel="preload" href="Images/Accueil.jpg" as="image" fetchpriority="high">
+    <link rel="preload" href="Images/Artiste.jpg" as="image">
+
+    <!-- Lien vers la feuille de style CSS -->
     <link rel="stylesheet" href="CSS/style.css">
-    <link rel="preload" fetchpriority="high" as="image" href="Images/Accueil.jpg" type="image hero">
 
     <!-- Icône de l’onglet du navigateur -->
     <link rel="icon" href="Images/icone.png" type="image/x-icon">
@@ -60,7 +64,7 @@
             <h2 class="secondary-title" id="Artiste-ancre">Notre artiste</h2>
 
             <div class="artiste-content">
-                <img src="Images/Artiste.jpg" class="artist-img" alt="photo de l'artiste">
+                <img fetchpriority="high" src="Images/Artiste.jpg" class="artist-img" alt="photo de l'artiste">
 
                 <p class="secondary-text">Artiste autodidacte né à Paris, Galileo s'est imposé au fil des
                 années comme une figure singulière du street art
