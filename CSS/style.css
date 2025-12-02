@@ -362,9 +362,10 @@ footer p {
 
     /* Header */
     .header {
-        padding: 20px 40px;
+        padding: 15px 40px;
         position: sticky;
-        top: 0;
+        top: 0; 
+        z-index: 1000;
     }
 
     .header h1 {
@@ -384,7 +385,7 @@ footer p {
     }
 
     .navbar ul {
-        gap: 90px;
+        gap: 110px;
         margin-top: 10px;
     }
 
