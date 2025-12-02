@@ -30,6 +30,8 @@ body img {
 .header {
     background-color: var(--color-header);
     padding: 20px;
+    position: sticky;
+    top: 0;
 }
 
 .header-container {
@@ -49,14 +51,8 @@ body img {
 }
 
 .header h1:hover {
-    animation: pulse 1s infinite ease-in-out alternate;
     color: var(--color-text);
     font-weight: bold;
-}
-
-@keyframes pulse {
-    from {transform: scale(1);}
-    to {transform: scale(1.1);}
 }
 
 .header a {
@@ -100,10 +96,6 @@ body img {
     transition: transform 0.3s ease;
 }
 
-.hero-content:hover {
-    transform: scale(1.05);
-}
-
 .hero-img {
     width: 100%;
     max-width: 325px;
@@ -135,10 +127,6 @@ body img {
     transition: transform 0.3s ease;
 }
 
-.artiste-content:hover {
-    transform: scale(1.05);
-}
-
 .artist-img {
     width: 100%;
     max-width: 325px;
@@ -167,17 +155,9 @@ body img {
     transition: filter 300ms;
 }
 
-.grid-images:has(:hover) :not(:hover) {
-    filter: blur(2px);
-}
-
 .image-and-text {
     text-align: center;
     transition: transform 0.3s ease;
-}
-
-.image-and-text:hover {
-    transform: scale(1.1) translateY(-1px);
 }
 
 .image-galerie {
@@ -298,6 +278,10 @@ footer p {
         margin: auto;
     }
 
+    .hero-content:hover {
+    transform: scale(1.05);
+    }
+
     /* Artiste Section */
     .artiste {
         padding: 50px 40px;
@@ -378,7 +362,7 @@ footer p {
 
     /* Header */
     .header {
-        padding: 25px 40px;
+        padding: 20px 40px;
         position: sticky;
         top: 0;
     }
@@ -386,6 +370,17 @@ footer p {
     .header h1 {
         font-size: 4em;
         margin-bottom: 20px;
+    }
+
+    .header h1:hover {
+    animation: pulse 1s infinite ease-in-out alternate;
+    color: var(--color-text);
+    font-weight: bold;
+    }
+
+    @keyframes pulse {
+    from {transform: scale(1);}
+    to {transform: scale(1.1);}
     }
 
     .navbar ul {
@@ -446,6 +441,10 @@ footer p {
         max-width: 550px;
     }
 
+    .artiste-content:hover {
+    transform: scale(1.05);
+    }
+
     /* Galerie Section */
     .galerie {
         padding: 60px 50px;
@@ -461,8 +460,16 @@ footer p {
         gap: 40px;
     }
 
+    .grid-images:has(:hover) :not(:hover) {
+    filter: blur(2px);
+    }
+
     .image-galerie {
         max-width: 350px;
+    }
+
+    .image-and-text:hover {
+    transform: scale(1.1) translateY(-1px);
     }
 
     .caption-image {
